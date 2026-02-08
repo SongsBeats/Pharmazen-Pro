@@ -33,7 +33,7 @@ export const Header = () => {
               />
             </Link>
 
-            {/* Desktop Navigation */}
+            {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
@@ -61,7 +61,7 @@ export const Header = () => {
               <button
                 aria-label={isMenuOpen ? "Close menu" : "Open menu"}
                 className="p-2 text-white"
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                onClick={() => setIsMenuOpen((v) => !v)}
               >
                 {isMenuOpen ? (
                   <X className="w-6 h-6" />
@@ -93,4 +93,22 @@ export const Header = () => {
                     {link.name}
                   </Link>
                 ))}
+
+                {/* Mobile CTA */}
                 <div className="flex flex-col gap-2 pt-4 border-t border-border">
+                  <Button variant="outline" className="w-full">
+                    Login
+                  </Button>
+                  <Button className="w-full">Get Started</Button>
+                </div>
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </header>
+
+      {/* Spacer */}
+      <div className="h-14 lg:h-20" aria-hidden="true" />
+    </>
+  );
+};
