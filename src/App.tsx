@@ -6,8 +6,6 @@ import { Routes, Route } from "react-router-dom";
 
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { ScrollToTop } from "@/components/ScrollToTop";
-import { NewsletterPopup } from "@/components/NewsletterPopup";
-import { CookieConsent } from "@/components/CookieConsent";
 import { WhatsAppChat } from "@/components/WhatsAppChat";
 
 import Index from "./pages/Index";
