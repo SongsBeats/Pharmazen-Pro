@@ -1,4 +1,4 @@
-# 🏥 PharmaZen - Complete Digital Healthcare Platform
+# 🏥 PharmaZen - Complete Digital Healthcare 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-18.3.1-61DAFB?logo=react)](https://reactjs.org/)
