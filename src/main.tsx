@@ -4,7 +4,7 @@ import App from "./App";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
- <BrowserRouter basename="/Pharmazen-Pro/">
+  <BrowserRouter basename="/Pharmazen-Pro/">
     <App />
   </BrowserRouter>
 );
