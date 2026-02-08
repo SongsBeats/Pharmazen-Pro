@@ -32,8 +32,6 @@ const App = () => {
         {/* Global UI helpers */}
         <ScrollProgress />
         <ScrollToTop />
-        <NewsletterPopup />
-        <CookieConsent />
         <WhatsAppChat />
 
         {/* Routes */}
