@@ -65,7 +65,9 @@ export const TestimonialsSection = () => {
     ];
 
     return (
-        <section className="section-padding bg-muted/30">
+        <></>
+        /* TESTIMONIALS SECTION - HIDDEN FOR FUTURE USE */
+        /* <section className="section-padding bg-muted/30">
             <div className="container mx-auto px-4 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -92,24 +94,24 @@ export const TestimonialsSection = () => {
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="glass-card p-6 hover:-translate-y-2 transition-transform duration-300"
                         >
-                            {/* Quote Icon */}
+                            {/* Quote Icon *\/}
                             <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                                 <Quote className="w-5 h-5 text-primary" />
                             </div>
 
-                            {/* Rating */}
+                            {/* Rating *\/}
                             <div className="flex gap-1 mb-4">
                                 {[...Array(testimonial.rating)].map((_, i) => (
                                     <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                                 ))}
                             </div>
 
-                            {/* Testimonial Text */}
+                            {/* Testimonial Text *\/}
                             <p className="text-muted-foreground mb-6 leading-relaxed">
                                 "{testimonial.text}"
                             </p>
 
-                            {/* Author Info */}
+                            {/* Author Info *\/}
                             <div className="flex items-center gap-4 pt-4 border-t border-border">
                                 <img
                                     src={testimonial.image}
@@ -133,6 +135,6 @@ export const TestimonialsSection = () => {
                     ))}
                 </div>
             </div>
-        </section>
+        </section> */
     );
 };
