@@ -77,8 +77,16 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button size="lg" className="glow text-base px-8 h-12 group">
-              Start Free Trial
+            <Button
+              size="lg"
+              className="glow text-base px-8 h-12 group"
+              onClick={() => {
+                const phoneNumber = "8919216351";
+                const message = "Hi! I'm interested in PharmaZen. Can you help me?";
+                window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
+              }}
+            >
+              Start Your Transformation
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </motion.div>
