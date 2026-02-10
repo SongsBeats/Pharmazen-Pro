@@ -139,9 +139,7 @@ export const Footer = () => {
               Built for the Future of Pharma
             </span>
           </div>
-          <p className="text-xs text-white/50 text-center">
-            PharmaZen is a business management platform for pharma retailers and distributors. It does not store patient medical records.
-          </p>
+          
         </div>
       </div>
     </footer>
