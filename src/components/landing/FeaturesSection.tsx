@@ -5,9 +5,15 @@
    Bell, 
    Heart, 
    TrendingUp, 
-  BarChart3,
-   DollarSign 
+  BarChart3
+  
  } from "lucide-react";
+
+const Rupee = ({ className = "" }: { className?: string }) => (
+  <div className={`${className} flex items-center justify-center`}>
+    <span className="text-accent font-semibold">₹</span>
+  </div>
+);
  
  const features = [
    {
@@ -36,7 +42,7 @@
     description: "Actionable reports that convert data into prioritized next steps—expiry risks, reorder priorities, and revenue opportunities.",
   },
    {
-     icon: DollarSign,
+     icon: Rupee as any,
      title: "Revenue Optimization",
      description: "Reduce losses from expiry, improve cash flow, and unlock new revenue streams.",
    },
