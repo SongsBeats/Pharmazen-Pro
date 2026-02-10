@@ -169,12 +169,16 @@ export const PricingCalculator = () => {
                             ))}
                         </div>
 
-                        <Button className="w-full glow h-12">
-                            Start Free Trial
+                        <Button
+                            className="w-full glow h-12"
+                            onClick={() => {
+                              const phoneNumber = "8919216351";
+                              const message = "Hi! I'm interested in PharmaZen. Can you help me?";
+                              window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
+                            }}
+                        >
+                            Start Your Transformation
                         </Button>
-                        <p className="text-xs text-center text-muted-foreground mt-3">
-                            14-day free trial • No credit card required
-                        </p>
                     </motion.div>
                 </div>
             </div>
