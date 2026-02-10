@@ -91,37 +91,6 @@ export const HeroSection = () => {
             </Button>
           </motion.div>
 
-          {/* Stats with Animated Counters */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8"
-          >
-            {[
-              { value: 10000, label: "Active Pharmacies", suffix: "+" },
-              { value: 50, label: "Prescriptions Processed", suffix: "M+" },
-              { value: 99.9, label: "Uptime Guaranteed", suffix: "%" },
-              { value: 500, label: "Revenue Protected", prefix: "₹", suffix: "Cr+" },
-            ].map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.4, delay: 0.6 + index * 0.1 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-display font-bold gradient-text mb-1">
-                  <AnimatedCounter
-                    end={stat.value}
-                    prefix={stat.prefix}
-                    suffix={stat.suffix}
-                  />
-                </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </div>
 
