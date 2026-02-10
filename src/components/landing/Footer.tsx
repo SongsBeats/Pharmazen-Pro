@@ -130,13 +130,18 @@ export const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-white/60">
-            © 2025 PharmaZen. All rights reserved.
+        <div className="mt-12 pt-8 border-t border-white/10 space-y-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-sm text-white/60">
+              © 2025 PharmaZen. All rights reserved.
+            </p>
+            <span className="text-sm text-white/60">
+              Built for the Future of Pharma
+            </span>
+          </div>
+          <p className="text-xs text-white/50 text-center">
+            PharmaZen is a business management platform for pharma retailers and distributors. It does not store patient medical records.
           </p>
-          <span className="text-sm text-white/60">
-            Built for the Future of Pharma
-          </span>
         </div>
       </div>
     </footer>
